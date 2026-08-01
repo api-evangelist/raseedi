@@ -1,7 +1,14 @@
 aid: raseedi
 name: Raseedi
-description: Raseedi is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Raseedi is an Egyptian financial technology platform that helps underbanked
+  users manage their spending and save money. Through its mobile app it offers
+  free and discounted calls, mobile top-ups and bill payments, cash loans, and a
+  smart dialer, building a community for financial control and savings. Surfaced
+  as a portfolio company of 500 Global and added to the API Evangelist network,
+  Raseedi runs a Wix-hosted marketing site with no first-party developer API;
+  its only machine-readable surface is a published llms.txt and the generic Wix
+  Site MCP endpoint.
 url: https://raw.githubusercontent.com/api-evangelist/raseedi/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +16,30 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- FinTech
+- Financial Services
+- Mobile Payments
+- Egypt
+- Lending
+- Telecom
+- Financial Inclusion
+image: https://raseediapp.com/favicon.ico
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +49,18 @@ maintainers:
 common:
 - type: Website
   url: https://raseediapp.com
+- type: Blog
+  url: https://www.raseediapp.com/blog
+- type: PrivacyPolicy
+  url: https://www.raseediapp.com/privacy-policy
+- type: LLMsTxt
+  url: llms/raseedi-llms.txt
+- type: MCPServer
+  url: mcp/raseedi-mcp.yml
+- type: DomainSecurity
+  url: security/raseedi-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1

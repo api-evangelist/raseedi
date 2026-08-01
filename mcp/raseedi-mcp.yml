@@ -1,0 +1,37 @@
+generated: '2026-07-20'
+method: searched
+source: live probe of https://www.raseediapp.com/_api/mcp (advertised in the site's /llms.txt)
+status: live
+name: Raseedi Site MCP
+description: >-
+  Raseedi's marketing site (raseediapp.com) is hosted on Wix and exposes the
+  generic Wix Site MCP endpoint. This is platform-provided infrastructure, NOT a
+  first-party Raseedi product API. It answers a fixed set of Wix site tools over
+  the Model Context Protocol for read-only, public site content and visitor
+  actions. No first-party Raseedi fintech API (calls, bill pay, loans, dialer) is
+  exposed through it.
+official: false
+provider_platform: Wix
+endpoint: https://www.raseediapp.com/_api/mcp
+transport: streamable-http
+authentication: none
+notes:
+- GET returns 401; a JSON-RPC POST (tools/list) returns the tool set.
+- No authentication required to connect; only public site information is accessible.
+- Content is served live from the site; a tools/list call returns tool updates.
+docs: https://dev.wix.com/docs/develop-websites/articles/get-started/about-the-wix-site-mcp
+tools:
+- name: GetBusinessDetails
+  description: Retrieves business and site details such as timezone, email, phone, and address.
+- name: SearchInSite
+  description: Searches the site for information.
+- name: SearchSiteApiDocs
+  description: Retrieves API documentation for the Wix business solutions installed on the site.
+- name: GenerateVisitorToken
+  description: Creates a new visitor session and obtains a visitor access token for the site.
+- name: CallWixSiteAPI
+  description: Calls API methods on the site to perform actions on a visitor's behalf.
+- name: ReadFullDocsArticle
+  description: Fetches a complete article from the Wix developer documentation portal.
+- name: ReadFullDocsMethodSchema
+  description: Fetches the full schema for a Wix API method.
