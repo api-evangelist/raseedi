@@ -1,7 +1,8 @@
 generated: '2026-07-20'
 method: searched
 source: live probe of https://www.raseediapp.com/_api/mcp (advertised in the site's /llms.txt)
-status: live
+status: published
+status_raw: live
 name: Raseedi Site MCP
 description: >-
   Raseedi's marketing site (raseediapp.com) is hosted on Wix and exposes the
