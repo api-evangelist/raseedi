@@ -4,13 +4,11 @@ source: live probe of https://www.raseediapp.com/_api/mcp (advertised in the sit
 status: published
 status_raw: live
 name: Raseedi Site MCP
-description: >-
-  Raseedi's marketing site (raseediapp.com) is hosted on Wix and exposes the
-  generic Wix Site MCP endpoint. This is platform-provided infrastructure, NOT a
-  first-party Raseedi product API. It answers a fixed set of Wix site tools over
-  the Model Context Protocol for read-only, public site content and visitor
-  actions. No first-party Raseedi fintech API (calls, bill pay, loans, dialer) is
-  exposed through it.
+description: Raseedi's marketing site (raseediapp.com) is hosted on Wix and exposes the generic Wix Site
+  MCP endpoint. This is platform-provided infrastructure, NOT a first-party Raseedi product API. It answers
+  a fixed set of Wix site tools over the Model Context Protocol for read-only, public site content and
+  visitor actions. No first-party Raseedi fintech API (calls, bill pay, loans, dialer) is exposed through
+  it.
 official: false
 provider_platform: Wix
 endpoint: https://www.raseediapp.com/_api/mcp
@@ -36,3 +34,9 @@ tools:
   description: Fetches a complete article from the Wix developer documentation portal.
 - name: ReadFullDocsMethodSchema
   description: Fetches the full schema for a Wix API method.
+deployment:
+  mode: remote
+  verified: searched
+  tools: 7
+  checked: '2026-08-12'
+  source: catalog MCP census
