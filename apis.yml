@@ -44,11 +44,11 @@ modified: '2026-07-20'
 tags:
 - Company
 - Fintech
-- Financial-Services
+- Financial Services
 - Mobile Payments
 - Egypt
 - Lending
-- Telecom
+- Telecommunications
 - Financial Inclusion
 tags_raw:
 - Company
@@ -59,6 +59,7 @@ tags_raw:
 - Lending
 - Telecom
 - Financial Inclusion
+- Financial-Services
 image: https://raseediapp.com/favicon.ico
 apis: []
 maintainers:
